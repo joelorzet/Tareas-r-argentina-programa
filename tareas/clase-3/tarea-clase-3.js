@@ -59,8 +59,8 @@ if (userAge > adminAge) {
 //"userAge"(dentro del if) TIENE EL MISMO NOMBRE QUE "userAge" EL CUAL SE ENCUENTRA EN EL
 //ÁMBITO GLOBAL
 
-const userIDValidation = prompt(
-	'Usted posee documento? Por favor responda con "si" o "no"' || ''
+const userIDValidation = (
+	prompt('Usted posee documento? Por favor responda con "si" o "no"') || ''
 ).toLowerCase();
 
 const EDAD_PARA_ENTRAR = 18;

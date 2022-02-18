@@ -1,13 +1,57 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Clase 5</title>
-</head>
-<body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+		/>
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Tarea Clase 5</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<header class="container">
+			<div>
+				<h1>Aca comineza la tarea</h1>
+			</div>
+			<p>
+				Sean bienvenidos, en esta página vamos a estar probando ciertas funcionalidades que se estuvieron
+				viendo en la clase 5.
+			</p>
 
-</body>
+			<form action="" onsubmit="return false;">
+				<div class="input"><input id="userName" type="text" placeholder="Ingrese su nombre" /></div>
+				<div>
+					<input type="text" id="userIDValidator" placeholder="Usted posee DNI" />
+				</div>
+				<div class="input"><input id="userAge" type="number" placeholder="Ingrese su edad" /></div>
+				<button id="ingresar">Ingresar</button>
+			</form>
+
+			<nav>
+				<ul>
+					<div class="mediaLinks">
+						<li class="facebook">
+							<span>Facebook: </span>
+							<a href="https://www.facebook.com/JoelOrzet" target="_blank">facebook.com/JoelOrzet</a>
+						</li>
+						<li class="twitter">
+							<span>Twitter: </span>
+							<a href="https://twitter.com/JoelOrzet" target="_blank">@joelorzet</a>
+						</li>
+						<li class="linkedin">
+							<span>LinkedIn: </span>
+							<a href="https://www.linkedin.com/in/joel-orzet-3a0465215/" target="_blank">@JoelOrzet</a>
+						</li>
+					</div>
+				</ul>
+				<div>
+					<p class="nameAnswer"></p>
+					<p class="respuesta"></p>
+				</div>
+			</nav>
+		</header>
+		<script src="tarea-clase-5.js"></script>
+	</body>
 </html>

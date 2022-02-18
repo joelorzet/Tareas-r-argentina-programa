@@ -56,3 +56,66 @@ Ejemplo form:
 // 2. obtener el número más pequeño y mostrarlo en un <em> pre-creado con el texto "El número más pequeño es..."
 // 3. obtener el número más grande y mostrarlo en un <em> pre-creado con el texto "El número más grande es..."
 // 4. obtener el número que más se repite y mostrarlo en un <em> pre-creado con el texto "El número más frecuente es..."
+
+function capitalizeName(name) {
+	return name.charAt(0).toUpperCase() + name.slice(1);
+}
+
+const titleH1 = document.querySelector('h1');
+
+console.log(titleH1);
+console.log(titleH1.innerText);
+
+titleH1.innerHTML = 'Título modificado para pruebas';
+
+const mediaLink = document.querySelectorAll('li');
+
+console.log(mediaLink);
+
+for (let i = 0; i < mediaLink.length; i++) {
+	console.log(mediaLink[i].innerText);
+}
+
+setInterval(function () {
+	titleH1.innerText = String(Math.random().toFixed(4)).slice(2);
+}, 1000);
+
+const $butonIngresar = document.querySelector('#ingresar');
+
+$butonIngresar.onclick = function () {
+	const userName = document.querySelector('#userName').value;
+	const userAge = Number(document.querySelector('#userAge').value);
+	const userIDValidator = document.querySelector('#userIDValidator').value;
+
+	const adminName = 'Joel'.toLowerCase();
+	const relativeName = 'Fernando'.toLowerCase();
+	const EDAD_MINIMA = 18;
+	const RESPUESTA_AFIRMATIVA = 'si';
+	const RESPUESTA_NEGATIVA = 'no';
+
+	let nameAnswer;
+	let respuesta;
+
+	if (userName.toLowerCase() === adminName) {
+		nameAnswer = `Hola Tocayo! Yo tambien me llamo ${capitalizeName(adminName)}`;
+	} else if (userName.toLowerCase() === relativeName) {
+		nameAnswer = `Hola ${capitalizeName(userName)} te llamas igual que mi pariente!`;
+	} else {
+		nameAnswer = `Hola ${capitalizeName(userName)}!`;
+	}
+
+	if (userIDValidator.toLowerCase() === RESPUESTA_AFIRMATIVA) {
+		if (userAge >= EDAD_MINIMA) {
+			respuesta = 'Hola, bienvenido. Que disfrute su noche!';
+		} else {
+			respuesta = 'Buenas noches, usted todavia es menor y no puede ingresar';
+		}
+	} else {
+		respuesta = 'Disculpe, sin identificacion no puede ingresar.';
+	}
+
+	document.querySelector('.nameAnswer').innerText = nameAnswer;
+	document.querySelector('.respuesta').innerText = respuesta;
+
+	return false;
+};

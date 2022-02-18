@@ -1,0 +1,83 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	width: 98%;
+	background: #cacaca;
+	margin: auto;
+	border-radius: 4px;
+	margin-top: 5px;
+}
+
+h1 {
+	width: 400px;
+	color: darkgreen;
+	margin: auto;
+	padding: 10px;
+	text-align: center;
+}
+
+p {
+	width: 800px;
+	margin: auto;
+	padding: 5px;
+	text-align: center;
+	color: blue;
+	margin-bottom: 20px;
+}
+
+form {
+	width: 450px;
+	border-radius: 4px;
+	margin: auto;
+	padding: 10px;
+	background: red;
+	text-align: center;
+}
+
+.input {
+	display: inline;
+	padding: 4px;
+	width: 150px;
+}
+input {
+	text-align: center;
+}
+
+nav {
+	text-align: center;
+	width: auto;
+}
+
+ul {
+	width: 700px;
+	margin: auto;
+	padding: 20px;
+	text-align: center;
+}
+
+.mediaLinks {
+	width: 400px;
+	display: inline;
+	text-align: center;
+}
+
+li {
+	font-size: 18px;
+	width: 280px;
+	padding-left: 10px;
+	padding-right: 10px;
+	list-style: none;
+	margin: auto;
+	text-align: left;
+}
+
+button {
+	display: block;
+	width: 80px;
+	margin: auto;
+	padding-top: 4px;
+	margin-top: 10px;
+}
