@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Tarea 6</title>
+	</head>
+	<body>
+		<div>
+			<form action="">
+				<label for="">De cuantas persona consta su grupo familiar?</label>
+				<input
+					type="number"
+					onsubmit="return false;"
+					id="grupo-familiar"
+					placeholder="Ingrese la cantidad aquí"
+				/>
+				<button type="button" id="agregar-grupo">Agregar</button>
+				<button type="reset" id="limpiar-grupo">Limpiar campos</button>
+				<div class="grupo-familiar"></div>
+				<button onsubmit="return false;" type="button" id="calcular">Calcular</button>
+			</form>
+
+			<div class="resultados"></div>
+		</div>
+
+		<script src="tarea-clase-6.js"></script>
+	</body>
+</html>
